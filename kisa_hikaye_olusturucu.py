@@ -1,19 +1,23 @@
+#Gerekli Kütüphaneleri ekliyoruz - Renk vermek için Colorama Kütüphanesi kullanıyoruz
 import colorama
+
+#Banner rengi
 banner_color = colorama.Fore.LIGHTRED_EX
 print(banner_color+f"""
-      
-██╗  ██╗██╗██╗  ██╗ █████╗ ██╗   ██╗███████╗     ██████╗ ██╗     ██╗   ██╗████████╗██╗   ██╗██████╗ ██╗   ██╗ ██████╗██╗   ██╗    ██╗   ██╗██████╗     ██████╗ 
-██║  ██║██║██║ ██╔╝██╔══██╗╚██╗ ██╔╝██╔════╝    ██╔═══██╗██║     ██║   ██║╚══██╔══╝██║   ██║██╔══██╗██║   ██║██╔════╝██║   ██║    ██║   ██║╚════██╗   ██╔═████╗
-███████║██║█████╔╝ ███████║ ╚████╔╝ █████╗      ██║   ██║██║     ██║   ██║   ██║   ██║   ██║██████╔╝██║   ██║██║     ██║   ██║    ██║   ██║ █████╔╝   ██║██╔██║
-██╔══██║██║██╔═██╗ ██╔══██║  ╚██╔╝  ██╔══╝      ██║   ██║██║     ██║   ██║   ██║   ██║   ██║██╔══██╗██║   ██║██║     ██║   ██║    ╚██╗ ██╔╝██╔═══╝    ████╔╝██║
-██║  ██║██║██║  ██╗██║  ██║   ██║   ███████╗    ╚██████╔╝███████╗╚██████╔╝   ██║   ╚██████╔╝██║  ██║╚██████╔╝╚██████╗╚██████╔╝     ╚████╔╝ ███████╗██╗╚██████╔╝
-╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝     ╚═════╝ ╚══════╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═════╝       ╚═══╝  ╚══════╝╚═╝ ╚═════╝ 
-                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                             
+                                                                                                  
+                                                                                                  
+██  ██ ▄▄ ▄▄ ▄▄  ▄▄▄  ▄▄ ▄▄ ▄▄▄▄▄   ▄████▄ ▄▄    ▄▄ ▄▄  ▄▄▄▄ ▄▄▄▄▄▄ ▄▄ ▄▄ ▄▄▄▄  ▄▄ ▄▄  ▄▄▄▄ ▄▄ ▄▄ 
+██████ ██ ██▄█▀ ██▀██ ▀███▀ ██▄▄    ██  ██ ██    ██ ██ ███▄▄   ██   ██ ██ ██▄█▄ ██ ██ ██▀▀▀ ██ ██ 
+██  ██ ██ ██ ██ ██▀██   █   ██▄▄▄   ▀████▀ ██▄▄▄ ▀███▀ ▄▄██▀   ██   ▀███▀ ██ ██ ▀███▀ ▀████ ▀███▀ 
+                                                         ▄█                                                                                                                                                                                                                  
 
 """)
+
+#Karakter ve Şehir Rengi
 bas_rol_karakterinin_rengi = colorama.Fore.LIGHTYELLOW_EX
 olaylarin_geciti_sehirin_rengi = colorama.Fore.MAGENTA
+
+#Kullanıcıdan Şehir ve Karakter adını alıyoruz
 bas_rol_karakterinin_adi = input(bas_rol_karakterinin_rengi+"Lütfen baş rol karakterinin adını giriniz -> ")
 olaylarin_geciti_sehir = input(olaylarin_geciti_sehirin_rengi+"Olayların geçtiği şehri giriniz -> ")
 metin_rengi = colorama.Fore.WHITE
@@ -31,4 +35,6 @@ Günün geri kalanında şehrin güzel yerlerini keşfetti. \n
 Akşam olunca eve dönmek için yürümeye başladı.Yolda eski bir arkadaşını gördü.\n
 Arkadaşıyla kahve içip sohbet etti.Sonra eve dönerken gökyüzüne baktı.\n
 Yıldızlar parlıyordu ve {bas_rol_karakterinin_adi} huzur doluydu.\n""")
+
+#Program direk çıkmasın diye girdi bekleniyor
 input("Çıkmak için herhangi bir tuşa basınınız......")
